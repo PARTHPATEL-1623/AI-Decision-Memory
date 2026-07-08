@@ -1,0 +1,12 @@
+# Ignore frontend directory
+frontend/
+node_modules/
+
+# Ignore compilation artifacts
+backend/**/bin/
+backend/**/obj/
+backend/.vs/
+.vs/
+.git/
+*.user
+*.suo
