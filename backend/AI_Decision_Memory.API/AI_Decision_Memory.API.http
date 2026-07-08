@@ -1,0 +1,6 @@
+@AI_Decision_Memory.API_HostAddress = http://localhost:5111
+
+GET {{AI_Decision_Memory.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

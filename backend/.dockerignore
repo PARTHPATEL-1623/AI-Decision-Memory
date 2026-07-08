@@ -1,0 +1,8 @@
+# Ignore compilation artifacts
+bin/
+obj/
+.vs/
+.idea/
+.git/
+*.user
+*.suo

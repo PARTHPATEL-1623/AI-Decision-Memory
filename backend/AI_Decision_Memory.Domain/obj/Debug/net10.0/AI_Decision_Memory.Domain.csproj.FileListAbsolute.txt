@@ -1,0 +1,11 @@
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Domain\bin\Debug\net10.0\AI_Decision_Memory.Domain.deps.json
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Domain\bin\Debug\net10.0\AI_Decision_Memory.Domain.dll
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Domain\bin\Debug\net10.0\AI_Decision_Memory.Domain.pdb
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Domain\obj\Debug\net10.0\AI_Decision_Memory.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Domain\obj\Debug\net10.0\AI_Decision_Memory.Domain.AssemblyInfoInputs.cache
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Domain\obj\Debug\net10.0\AI_Decision_Memory.Domain.AssemblyInfo.cs
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Domain\obj\Debug\net10.0\AI_Decision_Memory.Domain.csproj.CoreCompileInputs.cache
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Domain\obj\Debug\net10.0\AI_Decision_Memory.Domain.dll
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Domain\obj\Debug\net10.0\refint\AI_Decision_Memory.Domain.dll
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Domain\obj\Debug\net10.0\AI_Decision_Memory.Domain.pdb
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Domain\obj\Debug\net10.0\ref\AI_Decision_Memory.Domain.dll

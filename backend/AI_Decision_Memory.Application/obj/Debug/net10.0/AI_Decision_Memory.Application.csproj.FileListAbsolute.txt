@@ -1,0 +1,15 @@
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Application\bin\Debug\net10.0\AI_Decision_Memory.Application.deps.json
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Application\bin\Debug\net10.0\AI_Decision_Memory.Application.dll
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Application\bin\Debug\net10.0\AI_Decision_Memory.Application.pdb
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Application\bin\Debug\net10.0\AI_Decision_Memory.Domain.dll
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Application\bin\Debug\net10.0\AI_Decision_Memory.Domain.pdb
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Application\obj\Debug\net10.0\AI_Decision_Memory.Application.csproj.AssemblyReference.cache
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Application\obj\Debug\net10.0\AI_Decision_Memory.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Application\obj\Debug\net10.0\AI_Decision_Memory.Application.AssemblyInfoInputs.cache
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Application\obj\Debug\net10.0\AI_Decision_Memory.Application.AssemblyInfo.cs
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Application\obj\Debug\net10.0\AI_Decision_Memory.Application.csproj.CoreCompileInputs.cache
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Application\obj\Debug\net10.0\AI_Decis.2A4A8AA9.Up2Date
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Application\obj\Debug\net10.0\AI_Decision_Memory.Application.dll
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Application\obj\Debug\net10.0\refint\AI_Decision_Memory.Application.dll
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Application\obj\Debug\net10.0\AI_Decision_Memory.Application.pdb
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Application\obj\Debug\net10.0\ref\AI_Decision_Memory.Application.dll

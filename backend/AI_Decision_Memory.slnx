@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="AI_Decision_Memory.API/AI_Decision_Memory.API.csproj" />
+  <Project Path="AI_Decision_Memory.Application/AI_Decision_Memory.Application.csproj" />
+  <Project Path="AI_Decision_Memory.Domain/AI_Decision_Memory.Domain.csproj" />
+  <Project Path="AI_Decision_Memory.Infrastructure/AI_Decision_Memory.Infrastructure.csproj" />
+</Solution>

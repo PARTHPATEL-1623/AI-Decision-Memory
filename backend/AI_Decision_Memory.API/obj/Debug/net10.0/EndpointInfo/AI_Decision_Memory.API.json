@@ -1,0 +1,853 @@
+{
+  "openapi": "3.1.1",
+  "info": {
+    "title": "AI_Decision_Memory.API | v1",
+    "version": "1.0.0"
+  },
+  "servers": [
+    {
+      "url": "https://localhost:7247"
+    },
+    {
+      "url": "http://localhost:5111"
+    }
+  ],
+  "paths": {
+    "/api/AI/ask": {
+      "post": {
+        "tags": [
+          "AI"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AskRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AskRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AskRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DecisionAIResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DecisionAIResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DecisionAIResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/AI/slack": {
+      "post": {
+        "tags": [
+          "AI"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SlackRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SlackRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SlackRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/SlackResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SlackResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SlackResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Decisions": {
+      "get": {
+        "tags": [
+          "Decisions"
+        ],
+        "parameters": [
+          {
+            "name": "search",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "department",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "tag",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "stakeholder",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "role",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Decision"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Decision"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Decision"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Decisions"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Decision"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Decision"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Decision"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Decision"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Decision"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Decision"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Decisions/{id}": {
+      "get": {
+        "tags": [
+          "Decisions"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Decision"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Decision"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Decision"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Decisions/suggest": {
+      "post": {
+        "tags": [
+          "Decisions"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuggestionRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuggestionRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/SuggestionRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuggestionResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuggestionResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/SuggestionResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Decisions/contradictions": {
+      "get": {
+        "tags": [
+          "Decisions"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ContradictionPair"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ContradictionPair"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/ContradictionPair"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Decisions/vendor-tracker": {
+      "get": {
+        "tags": [
+          "Decisions"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/VendorTrackerResult"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VendorTrackerResult"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/VendorTrackerResult"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Decisions/health": {
+      "get": {
+        "tags": [
+          "Decisions"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DepartmentHealthReport"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DepartmentHealthReport"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DepartmentHealthReport"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Alternative": {
+        "type": "object",
+        "properties": {
+          "option": {
+            "type": "string"
+          },
+          "rejectedBecause": {
+            "type": "string"
+          }
+        }
+      },
+      "AskRequest": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string"
+          },
+          "roleFilter": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        }
+      },
+      "ContradictionPair": {
+        "type": "object",
+        "properties": {
+          "newerDecision": {
+            "$ref": "#/components/schemas/Decision"
+          },
+          "olderDecision": {
+            "$ref": "#/components/schemas/Decision"
+          },
+          "isResolved": {
+            "type": "boolean"
+          }
+        }
+      },
+      "Decision": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "title": {
+            "type": "string"
+          },
+          "department": {
+            "type": "string"
+          },
+          "dateDecided": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "summary": {
+            "type": "string"
+          },
+          "alternativesConsidered": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Alternative"
+            }
+          },
+          "stakeholders": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Stakeholder"
+            }
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "contradictedBy": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "relevantForRoles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "vendorCost": {
+            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
+            "type": [
+              "null",
+              "number",
+              "string"
+            ],
+            "format": "double"
+          },
+          "contractRenewalDate": {
+            "type": [
+              "null",
+              "string"
+            ],
+            "format": "date-time"
+          },
+          "linkedEntities": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LinkedEntity"
+            }
+          },
+          "lifecycleEvents": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/LifecycleEvent"
+            }
+          }
+        }
+      },
+      "DecisionAIResponse": {
+        "type": "object",
+        "properties": {
+          "answer": {
+            "type": "string"
+          },
+          "reasoning": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "stakeholders": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "dateDecided": {
+            "type": "string"
+          },
+          "sources": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "matchedDecisionId": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "isSuccess": {
+            "type": "boolean"
+          }
+        }
+      },
+      "DepartmentHealthReport": {
+        "type": "object",
+        "properties": {
+          "overallComplianceScore": {
+            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$",
+            "type": [
+              "number",
+              "string"
+            ],
+            "format": "double"
+          },
+          "totalDecisionsCatalogued": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "departmentScorecards": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/DepartmentScorecard"
+            }
+          }
+        }
+      },
+      "DepartmentScorecard": {
+        "type": "object",
+        "properties": {
+          "departmentName": {
+            "type": "string"
+          },
+          "decisionsCount": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "fullReasoningPercentage": {
+            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?(?:[eE][+-]?\\d+)?$",
+            "type": [
+              "number",
+              "string"
+            ],
+            "format": "double"
+          },
+          "contradictionCount": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "avgTimeToAnswerMs": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "healthStatus": {
+            "type": "string"
+          }
+        }
+      },
+      "LifecycleEvent": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "date": {
+            "type": "string"
+          },
+          "author": {
+            "type": "string"
+          },
+          "priority": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          }
+        }
+      },
+      "LinkedEntity": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          }
+        }
+      },
+      "SlackAttachment": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "color": {
+            "type": "string"
+          }
+        }
+      },
+      "SlackRequest": {
+        "type": "object",
+        "properties": {
+          "user": {
+            "type": "string"
+          },
+          "channel": {
+            "type": "string"
+          },
+          "text": {
+            "type": "string"
+          },
+          "roleContext": {
+            "type": [
+              "null",
+              "string"
+            ]
+          }
+        }
+      },
+      "SlackResponse": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "attachments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/SlackAttachment"
+            }
+          },
+          "username": {
+            "type": "string"
+          },
+          "iconEmoji": {
+            "type": "string"
+          }
+        }
+      },
+      "Stakeholder": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          }
+        }
+      },
+      "SuggestionRequest": {
+        "type": "object",
+        "properties": {
+          "description": {
+            "type": "string"
+          }
+        }
+      },
+      "SuggestionResponse": {
+        "type": "object",
+        "properties": {
+          "department": {
+            "type": "string"
+          },
+          "tags": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "relevantForRoles": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "VendorReviewItem": {
+        "type": "object",
+        "properties": {
+          "decisionId": {
+            "type": "string"
+          },
+          "vendorName": {
+            "type": "string"
+          },
+          "cost": {
+            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
+            "type": [
+              "number",
+              "string"
+            ],
+            "format": "double"
+          },
+          "renewalDate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "daysRemaining": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "status": {
+            "type": "string"
+          }
+        }
+      },
+      "VendorTrackerResult": {
+        "type": "object",
+        "properties": {
+          "vendorsEvaluatedCount": {
+            "pattern": "^-?(?:0|[1-9]\\d*)$",
+            "type": [
+              "integer",
+              "string"
+            ],
+            "format": "int32"
+          },
+          "totalAnnualSpend": {
+            "pattern": "^-?(?:0|[1-9]\\d*)(?:\\.\\d+)?$",
+            "type": [
+              "number",
+              "string"
+            ],
+            "format": "double"
+          },
+          "upcomingReviews": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/VendorReviewItem"
+            }
+          }
+        }
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "AI"
+    },
+    {
+      "name": "Decisions"
+    }
+  ]
+}

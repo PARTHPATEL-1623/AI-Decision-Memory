@@ -1,0 +1,17 @@
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Infrastructure\obj\Debug\net10.0\AI_Decision_Memory.Infrastructure.csproj.AssemblyReference.cache
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Infrastructure\obj\Debug\net10.0\AI_Decision_Memory.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Infrastructure\obj\Debug\net10.0\AI_Decision_Memory.Infrastructure.AssemblyInfoInputs.cache
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Infrastructure\obj\Debug\net10.0\AI_Decision_Memory.Infrastructure.AssemblyInfo.cs
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Infrastructure\obj\Debug\net10.0\AI_Decision_Memory.Infrastructure.csproj.CoreCompileInputs.cache
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Infrastructure\bin\Debug\net10.0\AI_Decision_Memory.Infrastructure.deps.json
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Infrastructure\bin\Debug\net10.0\AI_Decision_Memory.Infrastructure.dll
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Infrastructure\bin\Debug\net10.0\AI_Decision_Memory.Infrastructure.pdb
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Infrastructure\bin\Debug\net10.0\AI_Decision_Memory.Application.dll
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Infrastructure\bin\Debug\net10.0\AI_Decision_Memory.Domain.dll
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Infrastructure\bin\Debug\net10.0\AI_Decision_Memory.Application.pdb
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Infrastructure\bin\Debug\net10.0\AI_Decision_Memory.Domain.pdb
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Infrastructure\obj\Debug\net10.0\AI_Decis.53302536.Up2Date
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Infrastructure\obj\Debug\net10.0\AI_Decision_Memory.Infrastructure.dll
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Infrastructure\obj\Debug\net10.0\refint\AI_Decision_Memory.Infrastructure.dll
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Infrastructure\obj\Debug\net10.0\AI_Decision_Memory.Infrastructure.pdb
+C:\AI_Decision_Memory\backend\AI_Decision_Memory.Infrastructure\obj\Debug\net10.0\ref\AI_Decision_Memory.Infrastructure.dll
